@@ -1,0 +1,287 @@
+body {
+  width: 100vw;
+  height: 100svh;
+
+  background: rgb(255, 250, 239);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 250, 239, 1) 0%,
+    rgba(255, 241, 223, 1) 100%
+  );
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0px;
+}
+
+main {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  align-items: end;
+}
+
+#your-projects {
+  background: rgb(8, 5, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 5, 0, 1) 0%,
+    rgba(13, 8, 0, 1) 100%
+  );
+  height: calc(95% - 10rem);
+  width: calc(20% - 6rem);
+
+  padding: 5rem 3rem;
+
+  border-top-right-radius: 1rem;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: start;
+}
+
+#your-projects h1 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+#add-project-button {
+  color: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+
+  border: none;
+  cursor: pointer;
+
+  color: white;
+  text-transform: none;
+
+  color: gray;
+}
+
+#add-project-button:hover {
+  background-color: #d6d6d6;
+}
+
+#projects-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#projects-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0px;
+}
+
+#projects-list li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#projects-list li:hover {
+  background-color: #222;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  height: 95%;
+}
+
+#no-project-image {
+  width: 7rem;
+}
+
+#no-project-section h2 {
+  color: rgb(45, 45, 45);
+}
+
+#no-project-section p {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+#add-projects {
+  display: flex;
+
+  width: calc(80% - 20rem);
+  height: 95%;
+  padding: 0rem 17rem 0rem 3rem;
+}
+
+#add-projects input {
+  width: 100%;
+}
+
+.add-project-page-button {
+  padding: 1rem 2rem !important;
+  width: 8rem !important;
+  border-radius: 0.5rem !important;
+}
+
+#add-projects-save {
+  border: 1px solid lime;
+  color: lime;
+
+  transition: all 0.5s;
+}
+
+#add-projects-cancel {
+  color: rgb(35, 35, 35) !important;
+  border: 1px solid rgb(35, 35, 35);
+
+  transition: all 0.5s;
+}
+
+#add-projects-cancel:hover {
+  background-color: rgb(35, 35, 35);
+  color: white !important;
+}
+
+#add-projects-buttons {
+  align-self: flex-end;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#project {
+  width: calc(80% - 20rem);
+  height: calc(95% - 6rem);
+
+  padding: 6rem 17rem 0rem 3rem;
+}
+
+#add-projects-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50%;
+  gap: 1rem;
+
+  transform: translateY(-100%);
+}
+
+.input-label-group {
+  min-height: 10rem;
+}
+
+.normal-input {
+  min-height: 5rem;
+}
+
+.input-label-group div {
+  width: 100%;
+}
+
+#project-title-container {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#delete-project-button {
+  color: red;
+
+  border-color: red;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+
+  transition: all 0.5s;
+}
+
+#delete-project-button:hover,
+#remove-task-button:hover {
+  background-color: rgb(255, 86, 86);
+  border-color: rgb(255, 86, 86);
+
+  color: white;
+}
+
+#project-date {
+  color: rgb(150, 150, 150);
+  font-size: 1.3rem;
+
+  min-height: 5rem;
+}
+
+#project-description {
+  margin-top: 3rem;
+  min-height: 5rem;
+}
+
+#task-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 1rem;
+}
+
+#add-task-container {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  height: 5rem;
+}
+
+#add-task-container input {
+  width: 20rem;
+}
+
+#add-task-button {
+  border-color: lime;
+
+  color: lime;
+  padding: 1rem 2rem;
+}
+
+#add-task-button:hover,
+#add-projects-save:hover {
+  background-color: rgb(115, 254, 115);
+  border-color: rgb(115, 254, 115);
+  border-radius: 0.5rem;
+
+  color: white;
+}
+
+#tasks-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 0px;
+}
+
+#task-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5rem 1rem;
+}
+
+#remove-task-button {
+  border-color: red;
+  color: red;
+  padding: 0.5rem 1rem;
+
+  transition: all 0.5s;
+}
